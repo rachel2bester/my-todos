@@ -1,12 +1,18 @@
 .task {
     display: grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 50px 1fr 50px;
     width: 85%;
-    vertical-align: center;
-
     border: black solid 1px;
+    border-radius: 15px;
+
     * {
         margin: 5px;
+        display: flex;
+        align-content: center;
+        height: 100%;
+        padding: 0px;
+        margin:0px;
+        
     }
     
     &__title {
@@ -14,13 +20,18 @@
         font-weight: normal;
         width: 100%;
         text-align: left;
+        padding:5px;
         
     }
 
     &__button {
         height: 25px;
         width: 25px;
-        vertical-align: center;
+        padding: 5px;
         padding-left: 15px;
     }
+}
+
+.done {
+    text-decoration: line-through;
 }
