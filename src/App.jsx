@@ -20,7 +20,7 @@ function App() {
     const onDeleteTask = (event) => {
         console.log(event.target.id)
         setTasks(
-            tasks.filter((task, index) => index != event.target.id)
+            tasks.filter((task, index) => index !== event.target.id)
         )
     }
 
