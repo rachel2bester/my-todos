@@ -1,11 +1,19 @@
 .header {
     display:flex;
     justify-content: space-between;
-    height: 30px;
+    height: 50px;
     width: 100%;
+    align-items: center;
 
+    * {
+        margin: 10px;
+    }
 
     &__heading {
-        font-size: 20px;
+        font-size: 40x;
+    }
+
+    &__button {
+        font-size: 18px;
     }
 }
