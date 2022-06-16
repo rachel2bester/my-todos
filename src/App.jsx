@@ -5,8 +5,9 @@ import Tasks from './containers/Tasks/Tasks';
 
 function App() {
 
-  const onReset = () => {
 
+  const onReset = () => {
+    
   }
   return (
     <div className="App">
