@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.scss';
-import Header from './containers/Header/Header';
+import Header from './components/Header/Header';
 import Tasks from './containers/Tasks/Tasks';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
     const onDeleteTask = (event) => {
         console.log(event.target.id)
         setTasks(
-            tasks.filter((task, index) => index !== event.target.id)
+            tasks.filter((task, index) => index != event.target.id)
         )
     }
 
